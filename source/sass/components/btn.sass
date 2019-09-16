@@ -1,0 +1,82 @@
+.btn
+	$this: &
+	position: relative
+	overflow: hidden
+	display: inline-block
+	width: 100%
+	height: 50px
+	padding: 0 32px
+	font-size: 16px
+	line-height: 50px
+	text-align: center
+	text-decoration: none
+	text-transform: uppercase
+	color: #ffffff
+	background-color: $color-primary
+	border-radius: 50px
+	border: none
+	user-select: none
+	touch-action: manipulation
+	white-space: nowrap
+	transition: transform 0.5s ease-in-out
+	box-shadow: 0 2px 0 #c1412e
+
+	+sm
+		height: 60px
+		line-height: 60px
+		font-size: 18px
+
+	&:hover,
+	&:focus
+		background-color: $color-primary--hover
+		outline: none
+
+	&:disabled
+		background-color: $color-disabled--dark
+		color: $text-color--light
+
+	&__icon
+		padding-left: 15px
+
+	&--md
+		height: 50px
+		line-height: 50px
+		font-size: 14px
+
+		#{$this}__text
+			font-size: 14px
+
+	&--width
+		width: auto
+
+	&--default
+		color: #fff
+		font-weight: 500
+		background-color: #b6c0c1
+		box-shadow: 0 2px 0 #899192
+
+		&:hover,
+		&:focus
+			background-color: #899192
+
+	&--success
+		background-color: $color-success
+		box-shadow: 0 2px 0 $color-success--darken
+
+		&:hover,
+		&:focus
+			background-color: $color-success--hover
+
+	&--sm
+		height: 37px
+		line-height: 37px
+		font-size: 12px
+		padding: 0 26px
+		box-shadow: none
+
+		#{$this}__text
+			font-size: 12px
+
+	&--icon-right
+		justify-content: space-between
+		padding: 0 19px

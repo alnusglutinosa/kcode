@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>duhoot</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="preload" href="fonts/gotham-book.woff2" as="font" />
+	<link rel="preload" href="fonts/gotham-medium.woff2" as="font" />
+	<link rel="preload" href="fonts/gotham-bold.woff2" as="font" />
+	<link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body class="page">
+	<header class="header">
+		<div class="header__container  container">
+			<div class="header__wrap">
+				<a class="header__logo-link  logo">
+					<picture>
+						<source media="(min-width: 980px)" srcset="img/logo-desktop.svg">
+						<img class="logo__img" width="154" height="46" src="img/logo-mobile.svg" alt="Logo duhoot" />
+					</picture>
+				</a>
+
+				<nav class="header__nav  main-nav  main-nav--full-height" aria-label="main menu">
+					<button class="main-nav__toggle main-nav__toggle--hidden" type="button">
+						<span class="main-nav__toggle-bar">Меню</span>
+					</button>
+					<ul class="main-nav__list  main-nav__list--main">
+						<li class="main-nav__item">
+							<a class="main-nav__item-link" href="#">Reality</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__item-link" href="#">Living</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__item-link" href="#">Education</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__item-link" href="#">Entertainment</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__item-link" href="#">Mobility</a>
+						</li>
+					</ul>
+
+					<ul class="main-nav__list  main-nav__list--decor">
+						<li class="main-nav__item  main-nav__item--secondary main-nav__item--icon-only">
+							<a class="main-nav__item-link" href="#">
+								<i class="fas fa-search"></i>
+								<span class="visually-hidden">Search</span>
+							</a>
+						</li>
+						<li class="main-nav__item  main-nav__item--primary">
+							<a class="main-nav__item-link" href="#">
+								<i class="main-nav__icon  fas fa-user"></i>
+								<span class="main-nav__text">Login</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+
+
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<h1 class="visually-hidden">Site duhoot</h1>
+		<section class="form-search">
+			<div class="container">
+				<form class="form-search__wrap" action="#" method="post">
+					<h2 class="visually-hidden">Form search</h2>
+					<div class="form-search__title">What are you looking for?</div>
+
+					<div class="form-search__group">
+
+						<div class="form-search__input  form-search__input--sm  select-btn">
+							<select class="select-btn__select">
+								<option value="volvo">Dubai</option>
+								<option value="saab">Milan</option>
+								<option value="opel">Athens</option>
+								<option value="audi">Dhaka</option>
+							</select>
+						</div>
+
+						<div class="form-search__input  form-search__input--sm  select-btn">
+							<select class="select-btn__select">
+								<option value="volvo">Education</option>
+								<option value="saab">Entertainment</option>
+								<option value="opel">Travels</option>
+							</select>
+						</div>
+
+						<input class="form-search__input  form-search__input--lg" type="text" name="name"
+							placeholder="Keyword, name, date, ...">
+
+					</div>
+
+					<div class="form-search__submit">
+						<button class="btn  btn--width" type="submit">Search</button>
+					</div>
+
+				</form>
+			</div>
+		</section>
+
+		<section class="section-products">
+
+			<h2 class="visually-hidden">Products list</h2>
+
+			<div class="section-products__toolbar  toolbar-product">
+				<div class="container">
+					<button class="section-products__toggle btn btn--md  btn--default js-filter-btn" type="button">
+						<span class="section-products__toggle-bar">
+							Filter
+						</span>
+					</button>
+
+					<div class="toolbar-product__wrap  js-filter">
+
+						<div class="toolbar-product__nav  main-nav">
+							<ul class="main-nav__list  main-nav__list--sm">
+								<li class="main-nav__item  is-active">
+									<a class="main-nav__item-link" href="#">Recommended</a>
+								</li>
+								<li class="main-nav__item">
+									<a class="main-nav__item-link" href="#">Latest</a>
+								</li>
+								<li class="main-nav__item">
+									<a class="main-nav__item-link" href="#">Highlights</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="toolbar-product__buttons">
+
+							<div class="toolbar-product__btn  select-btn  select-btn--default">
+								<select class="select-btn__select  select-btn__select--position  ">
+									<option value="volvo">Dubai</option>
+									<option value="saab">Milan</option>
+									<option value="opel">Athens</option>
+									<option value="audi">Dhaka</option>
+								</select>
+							</div>
+
+							<div class="toolbar-product__btn">
+
+								<button class="btn  btn--sm  btn--success  btn--icon-right">
+									<span class="btn__text">Hide map</span>
+									<i class="btn__icon  fas  fa-map-marker-alt"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="toolbar-product__filter-type  filter-type">
+							<p class="filter-type__title">Filter:</p>
+							<ul class="filter-type__list">
+								<li class="filter-type__item">
+									<a class="filter-type__link  filter-type__link--success  filter-type__link--house" href="#">
+										<span class="visually-hidden">Housing</span>
+										<svg class="filter-type__icon" width="22" height="22">
+											<use xlink:href="img/sprite.svg#house"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="filter-type__item">
+									<a class="filter-type__link  filter-type__link--user" href="#">
+										<span class="visually-hidden">Housing</span>
+										<svg class="filter-type__icon  filter-type__icon--user" width="22" height="22">
+											<use xlink:href="img/sprite.svg#user"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="filter-type__item">
+									<a class="filter-type__link  filter-type__link--education" href="#">
+										<span class="visually-hidden">Housing</span>
+										<svg class="filter-type__icon  filter-type__icon--education" width="22"
+											height="22">
+											<use xlink:href="img/sprite.svg#education"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="filter-type__item  filter-type__item--attention">
+									<a class="filter-type__link  filter-type__link--attention  filter-type__link--music" href="#">
+										<span class="visually-hidden">Housing</span>
+										<svg class="filter-type__icon  filter-type__icon--music" width="22" height="22">
+											<use xlink:href="img/sprite.svg#music"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="filter-type__item  filter-type__item--bright">
+									<a class="filter-type__link  filter-type__link--bright  filter-type__link--transport" href="#">
+										<span class="visually-hidden">Housing</span>
+										<svg class="filter-type__icon  filter-type__icon--transport" width="22"
+											height="22">
+											<use xlink:href="img/sprite.svg#transport"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class="section-products__products-list">
+
+				<div class="container">
+					<div class="products-list">
+
+						<section class="products-list__item">
+							<a class="product  is-link" href="#">
+								<div class="product__media">
+									<div class="product-picture">
+
+										<picture>
+											<source type="image/webp"
+												srcset="img/bus-trans-desktop@1x.webp, img/bus-trans-desktop@2x.webp 2x">
+											<img class="product-picture__img" src="img/bus-trans-desktop@1x.jpg"
+												srcset="img/bus-trans-desktop@2x.jpg 2x" alt="Product img">
+										</picture>
+
+										<mark class="product-picture__label  label">
+											<span class="label__text">$2,990</span>
+										</mark>
+									</div>
+									<div class="picture-hover">
+										<div class="picture-hover__btn-more btn-more">
+											<i class="btn-more__icon  fas fa-search"></i>
+											<span class="btn-more__text">Show more</span>
+										</div>
+										<div class="picture-hover__icons">
+											<div class="picture-hover__rating rating rating--ligth rating--lg">
+												<div class="rating__stars">
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+												</div>
+											</div>
+											<i class="picture-hover__icon-item  fas fa-comments"></i>
+										</div>
+									</div>
+								</div>
+								<div class="product__description">
+									<h3 class="product__title">2 bedroom house for rent in Dubai</h3>
+									<div class="product__name">Vision Agency</div>
+									<div class="product__rating  rating">
+										<div class="rating__stars">
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  far fa-star"></span>
+										</div>
+										<div class="rating__count">(365)</div>
+									</div>
+								</div>
+							</a>
+						</section>
+
+						<section class="products-list__item">
+							<a class="product  product--attention  product--music  is-link" href="#">
+								<div class="product__media">
+									<div class="product-picture">
+										<picture>
+											<source type="image/webp"
+												srcset="img/long-beach-desktop@1x.webp, img/long-beach-desktop@2x.webp 2x">
+											<img class="product-picture__img" src="img/long-beach-desktop@1x.jpg"
+												srcset="img/long-beach-desktop@2x.jpg 2x" alt="Product img">
+										</picture>
+
+
+
+									</div>
+									<div class="picture-hover">
+										<div class="picture-hover__btn-more btn-more">
+											<i class="btn-more__icon  fas fa-search"></i>
+											<span class="btn-more__text">Show more</span>
+										</div>
+										<div class="picture-hover__icons">
+											<div class="picture-hover__rating rating rating--ligth rating--lg">
+												<div class="rating__stars">
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+												</div>
+											</div>
+											<i class="picture-hover__icon-item  fas fa-comments"></i>
+										</div>
+									</div>
+								</div>
+								<div class="product__description">
+									<h3 class="product__title">Beach party festival 2014</h3>
+									<div class="product__name">Long beach</div>
+									<div class="product__rating  rating">
+										<div class="rating__stars">
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+										</div>
+										<div class="rating__count">(1165)</div>
+									</div>
+								</div>
+							</a>
+						</section>
+
+						<section class="products-list__item">
+							<a class="product  product--bright  product--transport  is-link" href="#">
+								<div class="product__media">
+									<div class="product-picture">
+
+
+
+										<picture>
+											<source type="image/webp"
+												srcset="img/vision-agency-desktop@1x.webp, img/vision-agency-desktop@2x.webp 2x">
+											<img class="product-picture__img" src="img/vision-agency-desktop@1x.jpg"
+												srcset="img/vision-agency-desktop@2x.jpg 2x" alt="Product img">
+										</picture>
+
+
+									</div>
+									<div class="picture-hover">
+										<div class="picture-hover__btn-more btn-more">
+											<i class="btn-more__icon  fas fa-search"></i>
+											<span class="btn-more__text">Show more</span>
+										</div>
+										<div class="picture-hover__icons">
+											<div class="picture-hover__rating rating rating--ligth rating--lg">
+												<div class="rating__stars">
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+												</div>
+											</div>
+											<i class="picture-hover__icon-item  fas fa-comments"></i>
+										</div>
+									</div>
+								</div>
+								<div class="product__description">
+									<h3 class="product__title">Aliquam quis pulvinar purus</h3>
+									<div class="product__name">Bus Trans</div>
+									<div class="product__rating  rating">
+										<div class="rating__stars">
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  far fa-star"></span>
+										</div>
+										<div class="rating__count">(365)</div>
+									</div>
+								</div>
+							</a>
+						</section>
+
+						<section class="products-list__item">
+							<a class="product  product--house is-link" href="#">
+								<div class="product__media">
+									<div class="product-picture">
+
+										<picture>
+											<source type="image/webp"
+												srcset="img/reality-agency-desktop@1x.webp, img/reality-agency-desktop@2x.webp 2x">
+											<img class="product-picture__img" src="img/reality-agency-desktop@1x.jpg"
+												srcset="img/reality-agency-desktop@2x.jpg 2x" alt="Product img">
+										</picture>
+
+										<mark class="product-picture__label  label">
+											<span class="label__text">$2,990</span>
+										</mark>
+									</div>
+									<div class="picture-hover">
+										<div class="picture-hover__btn-more btn-more">
+											<i class="btn-more__icon  fas fa-search"></i>
+											<span class="btn-more__text">Show more</span>
+										</div>
+										<div class="picture-hover__icons">
+											<div class="picture-hover__rating rating rating--ligth rating--lg">
+												<div class="rating__stars">
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+												</div>
+											</div>
+											<i class="picture-hover__icon-item  fas fa-comments"></i>
+										</div>
+									</div>
+								</div>
+								<div class="product__description">
+									<h3 class="product__title">4 bedroom house for<br>rent in Dubai</h3>
+									<div class="product__name">Reality Agency</div>
+									<div class="product__rating  rating">
+										<div class="rating__stars">
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  far fa-star"></span>
+										</div>
+										<div class="rating__count">(165)</div>
+									</div>
+								</div>
+							</a>
+						</section>
+
+						<!-- REVIEW -->
+						<section class="products-list__item  products-list__item--review">
+							<div class="product  product--house  product--review">
+								<a class="product__media  is-link" href="#">
+									<div class="product-picture">
+										<picture>
+											<source type="image/webp"
+												srcset="img/review-vision-agency-desktop@1x.webp, img/review-vision-agency-desktop@2x.webp 2x">
+											<img class="product-picture__img"
+												src="img/review-vision-agency-desktop@1x.jpg"
+												srcset="img/review-vision-agency-desktop@2x.jpg 2x" alt="Product img">
+										</picture>
+
+										<div class="product-picture__info">
+											<h3 class="product-picture__name">Vision agency</h3>
+											<div class="product-picture__rating  rating  rating--white">
+												<div class="rating__stars">
+													<span class="rating__star  fa fa-star"></span>
+													<span class="rating__star  fa fa-star"></span>
+													<span class="rating__star  fa fa-star"></span>
+													<span class="rating__star  fa fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+												</div>
+												<div class="rating__count">(365)</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="picture-hover">
+										<div class="picture-hover__btn-more btn-more">
+											<i class="btn-more__icon  fas fa-search"></i>
+											<span class="btn-more__text">Show more</span>
+										</div>
+										<div class="picture-hover__icons">
+											<div class="picture-hover__rating rating rating--ligth rating--lg">
+												<div class="rating__stars">
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+												</div>
+											</div>
+											<i class="picture-hover__icon-item  fas fa-comments"></i>
+										</div>
+									</div>
+								</a>
+								<div class="product__review  review">
+									<div class="review__rating  rating  rating--lg">
+										<div class="rating__stars">
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  far fa-star"></span>
+											<span class="rating__star  far fa-star"></span>
+										</div>
+									</div>
+
+									<div class="review__img-wrap">
+										<img class="review__user-img" src="img/lucy-p.jpg" alt="Lucy-p" width="60"
+											height="60">
+									</div>
+
+									<div class="review__name">Lucy-p</div>
+									<div class="review__text">
+										<span class="review__text-min">
+											&quot;Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus,
+											quis posuere orci ornare. Duis mattis sagittis fringilla.&quot;</span> <a
+											href="#" class="review__text-link" tabindex="-1">...read more</a>
+									</div>
+
+								</div>
+							</div>
+						</section>
+
+						<section class="products-list__item  products-list__item--review">
+							<div class="product  product--attention  product--house  product--review">
+								<a class="product__media  is-link" href="#">
+									<div class="product-picture">
+										<picture>
+											<source type="image/webp"
+												srcset="img/review-skybox-club-desktop@1x.webp, img/review-skybox-club-desktop@2x.webp 2x">
+											<img class="product-picture__img"
+												src="img/review-skybox-club-desktop@1x.jpg"
+												srcset="img/review-skybox-club-desktop@2x.jpg 2x" alt="Product img">
+										</picture>
+
+										<div class="product-picture__info">
+											<h3 class="product-picture__name">Skybox club</h3>
+											<div class="product-picture__rating  rating  rating--white">
+												<div class="rating__stars">
+													<span class="rating__star  fa fa-star"></span>
+													<span class="rating__star  fa fa-star"></span>
+													<span class="rating__star  fa fa-star"></span>
+													<span class="rating__star  fa fa-star"></span>
+													<span class="rating__star  fa fa-star"></span>
+												</div>
+												<div class="rating__count">(1365)</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="picture-hover">
+										<div class="picture-hover__btn-more btn-more">
+											<i class="btn-more__icon  fas fa-search"></i>
+											<span class="btn-more__text">Show more</span>
+										</div>
+										<div class="picture-hover__icons">
+											<div class="picture-hover__rating rating rating--ligth rating--lg">
+												<div class="rating__stars">
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+												</div>
+											</div>
+											<i class="picture-hover__icon-item  fas fa-comments"></i>
+										</div>
+									</div>
+								</a>
+								<div class="product__review  review">
+									<div class="review__rating  rating  rating--lg">
+										<div class="rating__stars">
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+										</div>
+									</div>
+
+									<div class="review__img-wrap">
+										<img class="review__user-img" src="img/peter145.jpg" alt="Lucy-p" width="60"
+											height="60">
+									</div>
+
+									<div class="review__name">Peter145</div>
+									<div class="review__text">
+										<span class="review__text-min">
+											&quot;Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus,
+											quis posuere orci ornare. Duis mattis sagittis fringilla.&quot;</span> <a
+											href="#" class="review__text-link" tabindex="-1">...read more</a>
+									</div>
+
+								</div>
+							</div>
+						</section>
+
+						<section class="products-list__item">
+							<a class="product  is-link" href="#">
+								<div class="product__media">
+									<div class="product-picture">
+
+										<picture>
+											<source type="image/webp"
+												srcset="img/bus-trans-desktop@1x.webp, img/bus-trans-desktop@2x.webp 2x">
+											<img class="product-picture__img" src="img/bus-trans-desktop@1x.jpg"
+												srcset="img/bus-trans-desktop@2x.jpg 2x" alt="Product img">
+										</picture>
+
+										<mark class="product-picture__label  label">
+											<span class="label__text">$2,990</span>
+										</mark>
+									</div>
+									<div class="picture-hover">
+										<div class="picture-hover__btn-more btn-more">
+											<i class="btn-more__icon  fas fa-search"></i>
+											<span class="btn-more__text">Show more</span>
+										</div>
+										<div class="picture-hover__icons">
+											<div class="picture-hover__rating rating rating--ligth rating--lg">
+												<div class="rating__stars">
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+												</div>
+											</div>
+											<i class="picture-hover__icon-item  fas fa-comments"></i>
+										</div>
+									</div>
+								</div>
+								<div class="product__description">
+									<h3 class="product__title">2 bedroom house for rent in Dubai</h3>
+									<div class="product__name">Vision Agency</div>
+									<div class="product__rating  rating">
+										<div class="rating__stars">
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  far fa-star"></span>
+										</div>
+										<div class="rating__count">(365)</div>
+									</div>
+								</div>
+							</a>
+						</section>
+
+						<section class="products-list__item">
+							<a class="product  product--attention  product--music  is-link" href="#">
+								<div class="product__media">
+									<div class="product-picture">
+										<picture>
+											<source type="image/webp"
+												srcset="img/long-beach-desktop@1x.webp, img/long-beach-desktop@2x.webp 2x">
+											<img class="product-picture__img" src="img/long-beach-desktop@1x.jpg"
+												srcset="img/long-beach-desktop@2x.jpg 2x" alt="Product img">
+										</picture>
+
+
+
+									</div>
+									<div class="picture-hover">
+										<div class="picture-hover__btn-more btn-more">
+											<i class="btn-more__icon  fas fa-search"></i>
+											<span class="btn-more__text">Show more</span>
+										</div>
+										<div class="picture-hover__icons">
+											<div class="picture-hover__rating rating rating--ligth rating--lg">
+												<div class="rating__stars">
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+												</div>
+											</div>
+											<i class="picture-hover__icon-item  fas fa-comments"></i>
+										</div>
+									</div>
+								</div>
+								<div class="product__description">
+									<h3 class="product__title">Beach party festival 2014</h3>
+									<div class="product__name">Long beach</div>
+									<div class="product__rating  rating">
+										<div class="rating__stars">
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+										</div>
+										<div class="rating__count">(1165)</div>
+									</div>
+								</div>
+							</a>
+						</section>
+
+						<section class="products-list__item">
+							<a class="product  product--bright  product--transport  is-link" href="#">
+								<div class="product__media">
+									<div class="product-picture">
+
+
+
+										<picture>
+											<source type="image/webp"
+												srcset="img/vision-agency-desktop@1x.webp, img/vision-agency-desktop@2x.webp 2x">
+											<img class="product-picture__img" src="img/vision-agency-desktop@1x.jpg"
+												srcset="img/vision-agency-desktop@2x.jpg 2x" alt="Product img">
+										</picture>
+
+
+									</div>
+									<div class="picture-hover">
+										<div class="picture-hover__btn-more btn-more">
+											<i class="btn-more__icon  fas fa-search"></i>
+											<span class="btn-more__text">Show more</span>
+										</div>
+										<div class="picture-hover__icons">
+											<div class="picture-hover__rating rating rating--ligth rating--lg">
+												<div class="rating__stars">
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+												</div>
+											</div>
+											<i class="picture-hover__icon-item  fas fa-comments"></i>
+										</div>
+									</div>
+								</div>
+								<div class="product__description">
+									<h3 class="product__title">Aliquam quis pulvinar purus</h3>
+									<div class="product__name">Bus Trans</div>
+									<div class="product__rating  rating">
+										<div class="rating__stars">
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  far fa-star"></span>
+										</div>
+										<div class="rating__count">(365)</div>
+									</div>
+								</div>
+							</a>
+						</section>
+
+						<section class="products-list__item">
+							<a class="product  product--house is-link" href="#">
+								<div class="product__media">
+									<div class="product-picture">
+
+										<picture>
+											<source type="image/webp"
+												srcset="img/reality-agency-desktop@1x.webp, img/reality-agency-desktop@2x.webp 2x">
+											<img class="product-picture__img" src="img/reality-agency-desktop@1x.jpg"
+												srcset="img/reality-agency-desktop@2x.jpg 2x" alt="Product img">
+										</picture>
+
+										<mark class="product-picture__label  label">
+											<span class="label__text">$2,990</span>
+										</mark>
+									</div>
+									<div class="picture-hover">
+										<div class="picture-hover__btn-more btn-more">
+											<i class="btn-more__icon  fas fa-search"></i>
+											<span class="btn-more__text">Show more</span>
+										</div>
+										<div class="picture-hover__icons">
+											<div class="picture-hover__rating rating rating--ligth rating--lg">
+												<div class="rating__stars">
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+												</div>
+											</div>
+											<i class="picture-hover__icon-item  fas fa-comments"></i>
+										</div>
+									</div>
+								</div>
+								<div class="product__description">
+									<h3 class="product__title">4 bedroom house for<br>rent in Dubai</h3>
+									<div class="product__name">Reality Agency</div>
+									<div class="product__rating  rating">
+										<div class="rating__stars">
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  far fa-star"></span>
+										</div>
+										<div class="rating__count">(165)</div>
+									</div>
+								</div>
+							</a>
+						</section>
+
+						<section class="products-list__item  products-list__item--review">
+							<div class="product  product--attention  product--house  product--review">
+								<a class="product__media  is-link" href="#">
+									<div class="product-picture">
+										<picture>
+											<source type="image/webp"
+												srcset="img/review-skybox-club-desktop@1x.webp, img/review-skybox-club-desktop@2x.webp 2x">
+											<img class="product-picture__img"
+												src="img/review-skybox-club-desktop@1x.jpg"
+												srcset="img/review-skybox-club-desktop@2x.jpg 2x" alt="Product img">
+										</picture>
+
+										<div class="product-picture__info">
+											<h3 class="product-picture__name">Skybox club</h3>
+											<div class="product-picture__rating  rating  rating--white">
+												<div class="rating__stars">
+													<span class="rating__star  fa fa-star"></span>
+													<span class="rating__star  fa fa-star"></span>
+													<span class="rating__star  fa fa-star"></span>
+													<span class="rating__star  fa fa-star"></span>
+													<span class="rating__star  fa fa-star"></span>
+												</div>
+												<div class="rating__count">(1365)</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="picture-hover">
+										<div class="picture-hover__btn-more btn-more">
+											<i class="btn-more__icon  fas fa-search"></i>
+											<span class="btn-more__text">Show more</span>
+										</div>
+										<div class="picture-hover__icons">
+											<div class="picture-hover__rating rating rating--ligth rating--lg">
+												<div class="rating__stars">
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+												</div>
+											</div>
+											<i class="picture-hover__icon-item  fas fa-comments"></i>
+										</div>
+									</div>
+								</a>
+								<div class="product__review  review">
+									<div class="review__rating  rating  rating--lg">
+										<div class="rating__stars">
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+										</div>
+									</div>
+
+									<div class="review__img-wrap">
+										<img class="review__user-img" src="img/peter145.jpg" alt="Lucy-p" width="60"
+											height="60">
+									</div>
+
+									<div class="review__name">Peter145</div>
+									<div class="review__text">
+										<span class="review__text-min">
+											&quot;Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus,
+											quis posuere orci ornare. Duis mattis sagittis fringilla.&quot;</span> <a
+											href="#" class="review__text-link" tabindex="-1">...read more</a>
+									</div>
+
+								</div>
+							</div>
+						</section>
+
+						<section class="products-list__item">
+							<a class="product  is-link" href="#">
+								<div class="product__media">
+									<div class="product-picture">
+
+										<picture>
+											<source type="image/webp"
+												srcset="img/bus-trans-desktop@1x.webp, img/bus-trans-desktop@2x.webp 2x">
+											<img class="product-picture__img" src="img/bus-trans-desktop@1x.jpg"
+												srcset="img/bus-trans-desktop@2x.jpg 2x" alt="Product img">
+										</picture>
+
+										<mark class="product-picture__label  label">
+											<span class="label__text">$2,990</span>
+										</mark>
+									</div>
+									<div class="picture-hover">
+										<div class="picture-hover__btn-more btn-more">
+											<i class="btn-more__icon  fas fa-search"></i>
+											<span class="btn-more__text">Show more</span>
+										</div>
+										<div class="picture-hover__icons">
+											<div class="picture-hover__rating rating rating--ligth rating--lg">
+												<div class="rating__stars">
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+												</div>
+											</div>
+											<i class="picture-hover__icon-item  fas fa-comments"></i>
+										</div>
+									</div>
+								</div>
+								<div class="product__description">
+									<h3 class="product__title">2 bedroom house for rent in Dubai</h3>
+									<div class="product__name">Vision Agency</div>
+									<div class="product__rating  rating">
+										<div class="rating__stars">
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  far fa-star"></span>
+										</div>
+										<div class="rating__count">(365)</div>
+									</div>
+								</div>
+							</a>
+						</section>
+
+						<section class="products-list__item">
+							<a class="product  product--attention  product--music  is-link" href="#">
+								<div class="product__media">
+									<div class="product-picture">
+										<picture>
+											<source type="image/webp"
+												srcset="img/long-beach-desktop@1x.webp, img/long-beach-desktop@2x.webp 2x">
+											<img class="product-picture__img" src="img/long-beach-desktop@1x.jpg"
+												srcset="img/long-beach-desktop@2x.jpg 2x" alt="Product img">
+										</picture>
+
+
+
+									</div>
+									<div class="picture-hover">
+										<div class="picture-hover__btn-more btn-more">
+											<i class="btn-more__icon  fas fa-search"></i>
+											<span class="btn-more__text">Show more</span>
+										</div>
+										<div class="picture-hover__icons">
+											<div class="picture-hover__rating rating rating--ligth rating--lg">
+												<div class="rating__stars">
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+													<span class="rating__star  far fa-star"></span>
+												</div>
+											</div>
+											<i class="picture-hover__icon-item  fas fa-comments"></i>
+										</div>
+									</div>
+								</div>
+								<div class="product__description">
+									<h3 class="product__title">Beach party festival 2014</h3>
+									<div class="product__name">Long beach</div>
+									<div class="product__rating  rating">
+										<div class="rating__stars">
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+											<span class="rating__star  fa fa-star"></span>
+										</div>
+										<div class="rating__count">(1165)</div>
+									</div>
+								</div>
+							</a>
+						</section>
+
+
+
+
+
+					</div>
+
+					<div class="section-products__products-load">
+						<a class="section-products__btn-load btn-load" href="#">
+							<span class="btn-load__text">Load more</span>
+							<i class="btn-load__icon  fas fa-arrow-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="advantages">
+			<div class="container">
+				<div class="advantages__wrap">
+					<div class="advantages__header">
+						<h2 class="advantages__title">
+							What can DuHoot offer to you?
+						</h2>
+						<div class="advantages__sub-title">
+							Etiam cursus ipsum quis enim faucibus
+						</div>
+					</div>
+
+					<div class="advantages__tabs">
+
+						<ul class="advantages-icons js-tabs">
+							<li class="advantages-icons__item">
+								<a class="advantages-icons__link  js-tab active" tabindex="0">
+									<svg class="advantages-icons__svg" width="22" height="22">
+										<use xlink:href="img/sprite.svg#house"></use>
+									</svg>
+								</a>
+								<div class="advantages-icons__title">Reality</div>
+							</li>
+							<li class="advantages-icons__item">
+								<a class="advantages-icons__link  js-tab" tabindex="0">
+									<svg class="advantages-icons__svg" width="22" height="22">
+										<use xlink:href="img/sprite.svg#user"></use>
+									</svg>
+								</a>
+								<div class="advantages-icons__title">Reality</div>
+							</li>
+							<li class="advantages-icons__item">
+								<a class="advantages-icons__link  js-tab" tabindex="0">
+									<svg class="advantages-icons__svg" width="22" height="22">
+										<use xlink:href="img/sprite.svg#education"></use>
+									</svg>
+								</a>
+								<div class="advantages-icons__title">Reality</div>
+							</li>
+
+							<li class="advantages-icons__item">
+								<a class="advantages-icons__link  js-tab" tabindex="0">
+									<svg class="advantages-icons__svg" width="22" height="22">
+										<use xlink:href="img/sprite.svg#music"></use>
+									</svg>
+								</a>
+								<div class="advantages-icons__title">Reality</div>
+							</li>
+
+							<li class="advantages-icons__item">
+								<a class="advantages-icons__link  js-tab" tabindex="0">
+									<svg class="advantages-icons__svg" width="22" height="22">
+										<use xlink:href="img/sprite.svg#transport"></use>
+									</svg>
+								</a>
+								<div class="advantages-icons__title">Reality</div>
+							</li>
+
+						</ul>
+
+						<div class="advantages__panels">
+
+							<div class="advantag-panel js-panel active">
+								<h3 class="advantag-panel__title">
+									Reality
+								</h3>
+
+								<ul class="advantag-panel__list">
+									<li class="advantag-panel__item">
+										<div class="advantag-panel__item-wrap">
+											<span class="advantag-panel__icon-wrap">
+												<i class="advantag-panel__icon fas fa-bolt"></i>
+											</span>
+											<span class="advantag-panel__text">
+												Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+												ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim
+												mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.
+											</span>
+										</div>
+									</li>
+
+									<li class="advantag-panel__item">
+										<div class="advantag-panel__item-wrap">
+											<span class="advantag-panel__icon-wrap">
+												<i class="advantag-panel__icon fas fa-leaf"></i>
+											</span>
+											<span class="advantag-panel__text">
+												Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+												ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim
+												mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.
+											</span>
+										</div>
+									</li>
+								</ul>
+
+							</div>
+
+							<div class="advantag-panel js-panel">
+								<h3 class="advantag-panel__title">
+									Reality
+								</h3>
+
+								<ul class="advantag-panel__list">
+									<li class="advantag-panel__item">
+										<div class="advantag-panel__item-wrap">
+											<span class="advantag-panel__icon-wrap">
+												<i class="advantag-panel__icon fas fa-bolt"></i>
+											</span>
+											<span class="advantag-panel__text">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vel neque
+												eaque, tempore eos molestiae provident. Sapiente quasi quisquam culpa
+												laudantium praesentium.
+											</span>
+										</div>
+									</li>
+
+									<li class="advantag-panel__item">
+										<div class="advantag-panel__item-wrap">
+											<span class="advantag-panel__icon-wrap">
+												<i class="advantag-panel__icon fas fa-leaf"></i>
+											</span>
+											<span class="advantag-panel__text">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vel neque
+												eaque, tempore eos molestiae provident. Sapiente quasi quisquam culpa
+												laudantium praesentium.
+											</span>
+										</div>
+									</li>
+								</ul>
+
+							</div>
+
+							<div class="advantag-panel js-panel">
+								<h3 class="advantag-panel__title">
+									Reality
+								</h3>
+
+								<ul class="advantag-panel__list">
+									<li class="advantag-panel__item">
+										<div class="advantag-panel__item-wrap">
+											<span class="advantag-panel__icon-wrap">
+												<i class="advantag-panel__icon fas fa-bolt"></i>
+											</span>
+											<span class="advantag-panel__text">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vel neque
+												eaque, tempore eos molestiae provident. Sapiente quasi quisquam culpa
+												laudantium praesentium.
+											</span>
+										</div>
+									</li>
+
+									<li class="advantag-panel__item">
+										<div class="advantag-panel__item-wrap">
+											<span class="advantag-panel__icon-wrap">
+												<i class="advantag-panel__icon fas fa-leaf"></i>
+											</span>
+											<span class="advantag-panel__text">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vel neque
+												eaque, tempore eos molestiae provident. Sapiente quasi quisquam culpa
+												laudantium praesentium.
+											</span>
+										</div>
+									</li>
+								</ul>
+
+							</div>
+
+							<div class="advantag-panel js-panel">
+								<h3 class="advantag-panel__title">
+									Reality
+								</h3>
+
+								<ul class="advantag-panel__list">
+									<li class="advantag-panel__item">
+										<div class="advantag-panel__item-wrap">
+											<span class="advantag-panel__icon-wrap">
+												<i class="advantag-panel__icon fas fa-bolt"></i>
+											</span>
+											<span class="advantag-panel__text">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vel neque
+												eaque, tempore eos molestiae provident. Sapiente quasi quisquam culpa
+												laudantium praesentium.
+											</span>
+										</div>
+									</li>
+
+									<li class="advantag-panel__item">
+										<div class="advantag-panel__item-wrap">
+											<span class="advantag-panel__icon-wrap">
+												<i class="advantag-panel__icon fas fa-leaf"></i>
+											</span>
+											<span class="advantag-panel__text">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vel neque
+												eaque, tempore eos molestiae provident. Sapiente quasi quisquam culpa
+												laudantium praesentium.
+											</span>
+										</div>
+									</li>
+								</ul>
+
+							</div>
+
+							<div class="advantag-panel js-panel">
+								<h3 class="advantag-panel__title">
+									Reality
+								</h3>
+
+								<ul class="advantag-panel__list">
+									<li class="advantag-panel__item">
+										<div class="advantag-panel__item-wrap">
+											<span class="advantag-panel__icon-wrap">
+												<i class="advantag-panel__icon fas fa-bolt"></i>
+											</span>
+											<span class="advantag-panel__text">
+												Ipsum dolor sit amet consectetur adipisicing elit. Autem vel neque
+												eaque, tempore eos molestiae provident. Sapiente quasi quisquam culpa
+												laudantium praesentium.
+											</span>
+										</div>
+									</li>
+
+									<li class="advantag-panel__item">
+										<div class="advantag-panel__item-wrap">
+											<span class="advantag-panel__icon-wrap">
+												<i class="advantag-panel__icon fas fa-leaf"></i>
+											</span>
+											<span class="advantag-panel__text">
+												Tempore eos molestiae provident. Sapiente quasi quisquam culpa
+												laudantium praesentium.
+											</span>
+										</div>
+									</li>
+								</ul>
+
+							</div>
+
+						</div>
+
+					</div>
+
+
+
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrap">
+				<div class="footer__subscribe">
+					<form action="#" class="subscribe-form">
+						<div class="subscribe-form__title">Subscribe to our newsletter</div>
+						<div class="subscribe-form__group">
+							<i class="subscribe-form__icon far fa-envelope"></i>
+							<input type="email" name="email" class="subscribe-form__input" placeholder="your@email.com"
+								required="required">
+							<div class="subscribe-form__btn-wrap">
+								<button name="button" type="submit"
+									class="subscribe-form__btn  btn  btn--md  btn--width">Subscribe</button>
+							</div>
+						</div>
+
+
+
+					</form>
+				</div>
+
+				<div class="footer__info">
+
+					<div class="footer__menu  menu-category">
+
+						<div class="menu-category__title  category-title">
+							<div class="category-title__text">
+								Ipsum quis
+							</div>
+						</div>
+						<ul class="menu-category__list">
+							<li class="menu-category__item">
+								<a class="menu-category__link" href="">Aliquam quis</a>
+							</li>
+							<li class="menu-category__item">
+								<a class="menu-category__link" href="">Pulvinar purus</a>
+							</li>
+							<li class="menu-category__item">
+								<a class="menu-category__link" href="">Etiam cursus</a>
+							</li>
+							<li class="menu-category__item">
+								<a class="menu-category__link" href="">Ipsum quis</a>
+							</li>
+							<li class="menu-category__item">
+								<a class="menu-category__link" href="">Enim faucib</a>
+							</li>
+						</ul>
+
+
+					</div>
+
+					<div class="footer__menu  menu-category">
+
+						<div class="menu-category__title  category-title">
+							<div class="category-title__text">
+								Ipsum quis
+							</div>
+						</div>
+						<ul class="menu-category__list">
+							<li class="menu-category__item">
+								<a class="menu-category__link" href="">Aliquam quis</a>
+							</li>
+							<li class="menu-category__item">
+								<a class="menu-category__link" href="">Pulvinar purus</a>
+							</li>
+							<li class="menu-category__item">
+								<a class="menu-category__link" href="">Etiam cursus</a>
+							</li>
+							<li class="menu-category__item">
+								<a class="menu-category__link" href="">Ipsum quis</a>
+							</li>
+							<li class="menu-category__item">
+								<a class="menu-category__link" href="">Enim faucib</a>
+							</li>
+						</ul>
+
+
+					</div>
+
+					<div class="footer__social  menu-category">
+						<div class="menu-category__title  category-title">
+							<div class="category-title__text">
+								Follow us
+							</div>
+						</div>
+
+						<ul class="social-list">
+							<li class="social-list__item">
+								<a class="social-list__link" href="#" target="_blank">
+									<i class="fab fa-facebook-f"></i>
+								</a>
+							</li>
+							<li class="social-list__item">
+								<a class="social-list__link" href="#" target="_blank">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</li>
+							<li class="social-list__item">
+								<a class="social-list__link" href="#" target="_blank">
+									<i class="fab fa-google-plus-g"></i>
+								</a>
+							</li>
+
+							<li class="social-list__item">
+								<a class="social-list__link" href="#" target="_blank">
+									<i class="fab fa-youtube"></i>
+								</a>
+							</li>
+						</ul>
+
+						<div class="footer__copyright">Copyright © All Rights reserved</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+	</footer>
+
+	<script src="js/svg4everybody.min.js"></script>
+	<script>
+		svg4everybody();
+	</script>
+	<script src="js/picturefill.min.js"></script>
+	<script src="js/script.min.js"></script>
+</body>
+
+</html>

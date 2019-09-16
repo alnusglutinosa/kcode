@@ -1,0 +1,51 @@
+.advantag-panel
+	display: none
+
+	&.active
+		display: block
+
+	&__title
+		display: block
+		margin-bottom: 35px
+		text-align: center
+		color: $color-success
+		font-size: 24px
+		line-height: 1.25
+		font-weight: 500
+
+	&__text
+		display: block
+		color: #566375
+		font-size: 14px
+		line-height: 1.714
+		padding-right: 16px
+
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+
+	&__item
+		width: 41%
+		margin-bottom: 60px
+
+	&__item-wrap
+		position: relative
+		padding-left: 115px
+
+	&__icon-wrap
+		position: absolute
+		top: 8px
+		left: 20px
+		width: 62px
+		height: 62px
+		border-radius: 50%
+		background-color: $color-success
+
+	&__icon
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		color: #fff
+		font-size: 20px

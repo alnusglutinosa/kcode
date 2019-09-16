@@ -1,0 +1,22 @@
+.header
+	position: relative
+	overflow: hidden
+	background: $white
+
+	&__wrap
+		min-height: 62px
+		height: 1px
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+		+md
+			min-height: 74px
+
+	&__nav
+		justify-content: flex-end
+		width: calc(100% - 80px)
+		height: 100%
+
+		+md
+			width: calc(100% - 180px)

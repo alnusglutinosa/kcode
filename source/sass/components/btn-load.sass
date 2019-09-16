@@ -1,0 +1,23 @@
+.btn-load
+	position: relative
+	display: block
+	font-size: 18px
+	font-weight: 500
+	text-decoration: none
+
+	&__icon
+		margin-left: 4px
+		font-size: 12px
+
+	&:hover,
+	&:focus
+		color: $color-success
+		outline: none
+
+	&::before
+		content: ""
+		position: absolute
+		bottom: -2px
+		width: calc(100% - 18px)
+		height: 1px
+		background-color: #cccdd3

@@ -1,0 +1,76 @@
+.review
+	position: relative
+
+	&__rating
+		margin-bottom: 12px
+
+	&__name
+		display: block
+		margin-bottom: 5px
+		font-size: 16px
+		line-height: 1.25
+		font-weight: 500
+		text-transform: uppercase
+		color: #566375
+		white-space: nowrap
+		overflow: hidden
+
+	&__text
+		font-size: 14px
+		line-height: 1.42
+		color: #566375
+
+	&__text-min
+		display: inline
+		height: 70px
+		overflow: hidden
+		color: currentColor
+
+		+sm
+			height: auto
+			overflow: initial
+
+	&__text-link
+		position: relative
+		font-weight: 500
+		color: currentColor
+
+		&::before
+			content: ""
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
+			height: 1px
+			background-color: currentColor
+
+	&__user-img
+		display: block
+		border-radius: 50%
+		border: 2px solid currentColor
+		width: 100%
+		height: 100%
+
+	&__img-wrap
+		position: absolute
+		top: 76px
+		transform: translateY(-50%)
+		left: 21px
+		width: 60px
+		height: 60px
+		color: #e2dee0
+
+
+		&::after
+			content: ""
+			position: absolute
+			top: -16px
+			left: 50%
+			width: 2px
+			height: 12px
+			background-color: currentColor
+			display: none
+
+			+sm
+				display: block
+

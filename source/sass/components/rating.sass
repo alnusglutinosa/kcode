@@ -1,0 +1,33 @@
+.rating
+	$this: &
+	display: flex
+	align-items: center
+	color: $color-attention
+
+	&__stars
+		display: flex
+		align-items: center
+		font-size: 10px
+
+		+sm
+			font-size: 10px
+
+	&__star
+		color: currentColor
+
+	&__count
+		margin-left: 4px
+		font-size: 12px
+		font-weight: 500
+		color: #96a6a7
+
+	&--ligth
+		color: #ffffff
+
+	&--lg
+		#{$this}__stars
+			font-size: 16px
+
+	&--white
+		#{$this}__count
+			color: #ffffff

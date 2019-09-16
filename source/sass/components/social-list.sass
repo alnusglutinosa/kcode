@@ -1,0 +1,36 @@
+.social-list
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+	margin-bottom: 30px
+
+	+md
+		justify-content: flex-start
+		margin-bottom: 0
+
+	&__item
+		margin-bottom: 18px
+		padding-left: 10px
+		padding-rigth: 10px
+
+		+md
+			margin-bottom: 0px
+			padding-left: 20px
+			padding-right: 0
+
+			&:first-child
+				padding-left: 0
+
+	&__link
+		display: block
+		width: 28px
+		height: 28px
+
+		&:hover,
+		&:focus
+			outline: none
+			color: $color-primary
+
+		i
+			font-size: 28px
+

@@ -1,0 +1,84 @@
+.advantages-icons
+	$this: &
+	display: flex
+	flex-wrap: wrap
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	margin-bottom: 0
+
+	+sm
+		flex-direction: row
+		margin-bottom: 30px
+
+	&__title
+		display: block
+		text-align: center
+		margin-top: 10px
+		color: $color-success
+		font-size: 14px
+		line-height: 1.25
+		font-weight: 500
+
+		+md
+			display: none
+			font-size: 20px
+
+	&__item
+		position: relative
+		padding: 30px 0
+
+		+sm
+			padding: 0 30px
+
+		&:not(:first-child)::before
+			content: ""
+			position: absolute
+			top: 0
+			left: 50%
+			transform: translate(-50%, -50%)
+			width: 2px
+			height: 38px
+			background-color: #e2dee0
+
+			+sm
+				display: none
+
+			+md
+				display: block
+				top: 50%
+				left: 0
+				transform: translate(-50%, -50%)
+				width: 53px
+				height: 2px
+
+	&__link
+		display: flex
+		width: 85px
+		height: 85px
+		padding: 15px
+		border: 2px solid #9dacad
+		border-radius: 50%
+
+		+md
+			width: 104px
+			height: 104px
+			padding: 27px
+
+		&:hover,
+		&:focus
+			cursor: pointer
+			outline: none
+
+			#{$this}__svg
+				fill: $color-success--hover
+
+		&.active
+			border-color: $color-success
+
+			#{$this}__svg
+				fill: $color-success
+
+	&__svg
+		fill: #9dacad
+

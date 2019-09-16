@@ -1,0 +1,87 @@
+.form-search
+	padding-top: 30px
+	padding-bottom: 30px
+	background-color: #40403f
+	background-color: #2f2c2a
+	background-image: url(../img/pattern/patternfinal.png), url(../img/bg-hero-320@1x.jpg)
+	background-repeat: repeat, no-repeat
+	background-size: contain, cover
+	background-position: center top, center center
+
+	+retina
+		background-image: url(../img/pattern/patternfinal.png), url("../img/bg-hero-320@2x.jpg")
+
+	+xs
+		background-image: url(../img/pattern/patternfinal.png), url("../img/bg-hero-mobile@1x.jpg")
+		+retina
+			background-image: url(../img/pattern/patternfinal.png), url("../img/bg-hero-mobile@2x.jpg")
+
+	+sm
+		padding-top: 40px
+		padding-bottom: 40px
+		background-image: url(../img/pattern/patternfinal.png), url("../img/bg-hero-tablet@1x.jpg")
+		+retina
+			background-image: url(../img/pattern/patternfinal.png), url("../img/bg-hero-tablet@2x.jpg")
+
+	+md
+		padding-top: 45px
+		padding-bottom: 40px
+		background-image: url(../img/pattern/patternfinal.png), url("../img/bg-hero-desktop@1x.jpg")
+		+retina
+			background-image: url(../img/pattern/patternfinal.png), url("../img/bg-hero-desktop@2x.jpg")
+
+	&__wrap
+		display: flex
+		flex-direction: column
+		margin: 0 auto
+
+		+md
+			width: 48%
+
+	&__title
+		display: block
+		margin-bottom: 10px
+		font-size: 30px
+		line-height: 1.6
+		text-align: center
+		color: #ffffff
+
+		+md
+			margin-bottom: 25px
+
+	&__submit
+		display: flex
+		justify-content: center
+
+	&__group
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		margin-bottom: 6px
+
+	&__input
+		margin-bottom: 22px
+		height: 50px
+		width: 100%
+		padding: 0 2.5em 0 2em
+		font-size: 16px
+		line-height: 1.66
+		color: #fff
+		background-color: rgba(255,255,255,.10)
+		border: 1px solid rgba(255, 255, 255, 0.2)
+		border-radius: 2em
+
+		+md
+			font-size: 18px
+
+		&:focus
+			outline: none
+
+		&--sm
+			+sm
+				width: calc(50% - 14px)
+
+		&--lg
+			height: 57px
+			padding: 0 2.3em 0 1.8em
+

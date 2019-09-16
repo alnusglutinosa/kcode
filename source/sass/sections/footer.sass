@@ -1,0 +1,77 @@
+.footer
+	padding-top: 40px
+	padding-bottom: 40px
+	font-size: 14px
+	line-height: 1,7
+	color: #ffffff
+	background-color: #40403f
+	background-color: #2f2c2a
+	background-image: url(../img/bg-footer-320@1x.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+
+	+retina
+		background-image: url("../img/bg-footer-320@2x.jpg")
+
+	+xs
+		background-image: url("../img/bg-footer-mobile@1x.jpg")
+		+retina
+			background-image: url("../img/bg-footer-mobile@2x.jpg")
+
+	+sm
+		padding-top: 45px
+		padding-bottom: 45px
+		background-image: url("../img/bg-footer-tablet@1x.jpg")
+		+retina
+			background-image: url("../img/bg-footer-tablet@2x.jpg")
+
+	+md
+		padding-top: 55px
+		padding-bottom: 60px
+		background-image: url("../img/bg-footer-desktop@1x.jpg")
+		+retina
+			background-image: url("../img/bg-footer-desktop@2x.jpg")
+
+	&__subscribe
+		display: flex
+		align-items: center
+		justify-content: center
+		padding-bottom: 30px
+		border-bottom: 1px solid rgba(255, 255, 255, 0.10)
+		margin-bottom: 20px
+
+		+sm
+			margin-bottom: 35px
+			padding-bottom: 55px
+
+	&__info
+		display: flex
+		flex-wrap: wrap
+
+		+md
+			flex-wrap: nowrap
+
+	&__menu
+		width: 100%
+
+		+sm
+			width: 50%
+
+		+md
+			width: 33.33%
+
+	&__social
+		width: 100%
+		display: flex
+		flex-direction: column
+		text-align: center
+
+		+md
+			width: 33.33%
+			text-align: left
+
+	&__copyright
+		margin-top: auto
+
+		+md
+			padding-bottom: 7px

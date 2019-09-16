@@ -1,0 +1,56 @@
+body
+	min-width: 320px
+	background-color: $bg-page
+	font-size: 14px
+	line-height: 1.25
+	font-family: 'Gotham', 'Arial', sans-serif
+	font-weight: 400
+	color: $text-color
+
+	+sm
+		font-size: 14px
+
+	+md
+		font-size: 16px
+
+.container
+	max-width: #{$desktops-min-width + ($padding--xs * 2)}px
+	margin: 0 auto
+	padding: 0 #{$padding--xs}px
+
+	+sm
+		max-width: #{$tablets-min-width + ($padding--sm * 2)}px
+		margin: 0 auto
+		padding: 0 #{$padding--sm}px
+
+	+md
+		max-width: #{$desktops-min-width + ($padding--md * 2)}px
+		margin: 0 auto
+		padding: 0 #{$padding--md}px
+
+img
+  max-width: 100%
+  height: auto
+
+.visually-hidden
+	position: absolute
+	width: 1px
+	height: 1px
+	margin: -1px
+	border: 0
+	padding: 0
+	white-space: nowrap
+	clip-path: inset(100%)
+	clip: rect(0 0 0 0)
+	overflow: hidden
+
+.html-is-overflow
+	overflow: hidden
+	width: 100vw
+	height: 100vw
+
+	body
+		overflow: hidden
+		width: 100vw
+		height: 100vw
+

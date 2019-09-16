@@ -1,0 +1,92 @@
+.subscribe-form
+	width: 100%
+	color: #ffffff
+
+	+sm
+		width: 70%
+
+	+md
+		width: 50%
+
+	&__title
+		display: block
+		margin-bottom: 20px
+		font-size: 24px
+		line-height: 1.25
+		font-weight: 500
+		text-align: center
+
+		+sm
+			margin-bottom: 33px
+
+		+md
+			margin-bottom: 40px
+
+	&__group
+		position: relative
+		padding: 0px 4px
+		border-collapse: separate
+		box-shadow: 0
+		overflow: hidden
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+
+		+sm
+			display: table
+			padding: 5px
+			color: #fff
+			border-radius: 50px
+			background-color: rgba(255,255,255,.1)
+			border: 1px solid rgba(255,255,255,.2)
+
+	&__input
+		display: table-cell
+		background-color: #fff
+		width: 100%
+		height: 52px
+		margin-bottom: 15px
+		padding: 20px
+		font-size: 18px
+		line-height: 1.66
+		color: #fff
+		border-radius: 50px
+		background-color: rgba(255,255,255,.23)
+		border-radius: 50px
+		border: 1px solid rgba(255,255,255,.23)
+
+		+sm
+			margin-bottom: 0
+			background-color: transparent
+			border: 0
+
+		&:focus
+			outline: none
+
+	&__btn-wrap
+		+sm
+			display: table-cell
+			width: 1%
+			white-space: nowrap
+			vertical-align: middle
+
+	&__btn
+		display: inline-block
+		width: 100%
+		height: 52px
+		padding: 0 19px
+		border-radius: 50px
+		color: #fff
+		background-color: $color-primary
+
+	&__icon
+		display: none
+		width: 1%
+		white-space: nowrap
+		vertical-align: middle
+		padding-left: 30px
+		font-size: 20px
+
+		+sm
+			display: table-cell

@@ -1,0 +1,26 @@
+=r($width)
+    @media only screen and (max-width: $width+ "px")
+        @content
+
+=rmin($width)
+    @media only screen and (min-width: $width+ "px")
+        @content
+
+=retina
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx)
+        @content
+
+=lg
+    +rmin(2560)
+        @content
+=md
+    +rmin($desktops-min-width)
+        @content
+
+=sm
+    +rmin($tablets-min-width)
+        @content
+
+=xs
+    +rmin($phones-min-width)
+        @content
