@@ -46,10 +46,11 @@
 			#{$this}__item
 				height: auto
 				padding: 10px 55px 10px 12px
-				width: 100%
+				width: 85%
 
 				+sm
 					padding: 0
+					width: 100%
 
 			+sm
 				padding: 0 7px 0 0
@@ -171,16 +172,22 @@
 				height: 100%
 
 	&--opened
+		.main-nav__toggle
+			position: fixed
+			top: 12px
+			right: 10px
+			z-index: 12
 		.main-nav__toggle-bar
-			+xs
-				display: block
-				background-color: transparent
-				z-index: 6
-				color: $color-success
-				position: fixed
-				top: auto
-				left: auto
-				transform: translate(0%, 0%)
+
+			display: block
+			background-color: #fff
+			z-index: 15
+			color: $color-success
+			// position: fixed
+			// top: auto
+			// left: auto
+			// transform: translate(0%, 0%)
+			position: absolute
 
 			&::before
 				top: 0
@@ -220,9 +227,9 @@
 	padding: 20px
 	background-color: transparent
 	border: 0
-	user-select: none
-	text-indent: -1000px
-	overflow: hidden
+	// user-select: none
+	// text-indent: -1000px
+	// overflow: hidden
 	z-index: 10
 
 	&:hover
@@ -263,5 +270,4 @@
 
 	&::after
 		top: -8px
-
 
